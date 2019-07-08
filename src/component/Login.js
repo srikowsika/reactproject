@@ -5,12 +5,18 @@ import {
   Button,
 } from 'reactstrap';
 import '../assets/stylesheets/stylesheet.css'
-//import { BrowserRouter as Router, Route, Link,Redirect,Switch } from "react-router-dom"
-import Register from './Register'
+import { Link } from "react-router-dom"
+//import Register from './Register'
 //import './App.css';
 
 class Login extends Component {
 
+  handleClick(event)
+  {
+    event.preventDefault();
+  }
+
+  
   
   render() {
     
@@ -41,11 +47,12 @@ class Login extends Component {
               />
             </FormGroup>
           </Col>
-          <Button>Sign in</Button><br></br>
+          <Button onClick={this.handleClick}>Sign in</Button><br></br>
           <Label>Not a member? </Label>
-          <Route>
-            <Link to='/register' component={Register}> <Button>Register</Button></Link>
-          </Route>
+             <Link to='/register'>Register
+             </Link>
+           
+              
           
         </Form>
       </Container>

@@ -8,6 +8,12 @@ import '../assets/stylesheets/stylesheet.css'
 //import './App.css';
 
 class Register extends Component {
+
+  handleClick(event)
+  {
+    event.preventDefault();
+  }
+
   render() {
     return (
         <div>
@@ -47,7 +53,7 @@ class Register extends Component {
               />
             </FormGroup>
           </Col>
-          <Button>Register</Button>
+          <Button onClick={this.handleClick}>Register</Button>
         </Form>
       </Container>
       </div>
