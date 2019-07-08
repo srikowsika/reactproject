@@ -20,7 +20,7 @@ input[type=text], input[type=password], input[type=email] {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
+/* Set a style for all buttons*/
 button {
   background-color: #4CAF50;
   color: white;
@@ -30,7 +30,7 @@ button {
   
   width: 10%;
   align-self: auto;
-}
+} 
 
 button:hover {
   opacity: 0.8;
@@ -95,23 +95,4 @@ span.psw {
      width: 7%;
   }
   
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    font-size: 20px;
-    
-  }
-  
-  li {
-    float: left;
-    
-    
-  }
-  
-  
-  li a:hover {
-    background-color: #111;
-  }
+ 

@@ -6,8 +6,7 @@ import {
 } from 'reactstrap';
 import '../assets/stylesheets/stylesheet.css'
 import { Link } from "react-router-dom"
-//import Register from './Register'
-//import './App.css';
+
 
 class Login extends Component {
 
@@ -47,7 +46,7 @@ class Login extends Component {
               />
             </FormGroup>
           </Col>
-          <Button onClick={this.handleClick}>Sign in</Button><br></br>
+          <Button class="btn btn-success">Sign in</Button><br></br>
           <Label>Not a member? </Label>
              <Link to='/register'>Register
              </Link>

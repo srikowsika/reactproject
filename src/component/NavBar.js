@@ -6,13 +6,9 @@ class NavBar extends Component{
     {
       return(
         <div>
-        <ul>
-          <li>Home</li>
-          <li>News</li>
-          <li>Contact</li>
-          <li>About</li>
-        </ul>
+        
         </div>
+
       );
 
     }
