@@ -6,12 +6,15 @@ import {
 } from 'reactstrap';
 import '../assets/stylesheets/stylesheet.css'
 import { Link } from "react-router-dom"
-
+//import {RouterComponent} from '../routers/router'
 
 class Login extends Component {
 
+ 
+
   handleClick(event)
   {
+
     event.preventDefault();
   }
 
@@ -46,10 +49,9 @@ class Login extends Component {
               />
             </FormGroup>
           </Col>
-          <Button class="btn btn-success">Sign in</Button><br></br>
+          <Button class="btn btn-success" onClick={this.handleClick}>Sign in</Button><br></br>
           <Label>Not a member? </Label>
-             <Link to='/register'>Register
-             </Link>
+             <Link to='/register'>Register</Link>
            
               
           

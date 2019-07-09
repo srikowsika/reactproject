@@ -9,6 +9,17 @@ import '../assets/stylesheets/stylesheet.css'
 
 class Register extends Component {
 
+  constructor(props)
+  {
+    super(props);
+
+    this.state ={
+      username :'',
+      password :''
+      
+    }
+  }
+
   handleClick(event)
   {
     event.preventDefault();
@@ -20,7 +31,9 @@ class Register extends Component {
       <Container >
         <h2>Sign Up</h2>
         <Form >
+        
           <Col>
+         
             <FormGroup>
               <Label>Email </Label>
               <Input
@@ -31,7 +44,7 @@ class Register extends Component {
               />
             </FormGroup>
           </Col>
-          <Col>
+         <Col>
             <FormGroup>
               <Label for="examplePassword">Password </Label>
               <Input
@@ -52,7 +65,9 @@ class Register extends Component {
                 placeholder="Re-enter your passsword"
               />
             </FormGroup>
+           
           </Col>
+          
           <Button onClick={this.handleClick}>Register</Button>
         </Form>
       </Container>
