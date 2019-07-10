@@ -5,7 +5,7 @@ import MovieCard from './component/MovieCard'
 import Login from './component/Login';
 import Register from './component/Register';
 import Theater from './component/Theater'
-//import MenuBar from './component/NavBar.js';
+import Header from './component/Header';
 //import carousel from './component/carosel.js'
 //import Header from './component/Header';
 
@@ -24,7 +24,8 @@ function App() {
         <Route path='/movie' component={MovieCard}></Route>
           <Route path='/register' component={Register}></Route>
           <Route path='/theater' component={Theater}></Route>
-          <Route path='/' component={Login}></Route>
+          <Route exact path='/' component={Login}></Route>
+          <Route path='/home' component={Header}></Route>
         </Switch>
       </BrowserRouter>
     

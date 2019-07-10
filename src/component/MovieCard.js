@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import { Card, CardImg, CardText, CardBody,
+import { Card, CardText, CardBody,
   CardTitle, CardSubtitle, Button,Container, Row, Col } from 'reactstrap';
-  import {Link } from "react-router-dom"
-import '../assets/stylesheets/stylesheet.css'
-
+  import {Link } from "react-router-dom";
+import '../assets/stylesheets/stylesheet.css';
+//import '../assets/images/';
 class MovieCard extends Component{
 
   constructor(props)
@@ -21,7 +21,7 @@ class MovieCard extends Component{
        <Row>
          <Col>
       <Card>
-        <CardImg top width="100%" src='./assets/images/KabirSingh.jpeg' alt="snow" />
+         <img src={require ('../assets/images/KabirSingh.jpeg')} width="150" height="150" alt='loading'/>
         <CardBody>
           <CardTitle>Kabir Singh</CardTitle>
           <CardSubtitle>2019 ‧ Drama/Action ‧ 2h 52m</CardSubtitle>
@@ -32,7 +32,7 @@ class MovieCard extends Component{
       </Col>
       <Col>
       <Card>
-        <CardImg top width="100%" src="../assets/images/spiderman.jpeg" alt='snow'/>
+      <img src={require ('../assets/images/spiderman.jpeg')} width="150" height="150" alt='loading'/>
         <CardBody>
           <CardTitle>Spider Man: Far From Home</CardTitle>
           <CardSubtitle>2019 ‧ Fantasy/Sci-fi ‧ 2h 9m</CardSubtitle>
@@ -43,7 +43,7 @@ class MovieCard extends Component{
       </Col>
       <Col>
       <Card>
-        <CardImg top width="100%" src="../assets/images/avengers" alt="Card image cap" />
+      <img src={require ('../assets/images/avengers.jpeg')} width="150" height="150" alt='loading'/>
         <CardBody>
           <CardTitle>Avengers: End Game</CardTitle>
           <CardSubtitle>2019 ‧ Fantasy/Sci-fi ‧ 3h 2m</CardSubtitle>
