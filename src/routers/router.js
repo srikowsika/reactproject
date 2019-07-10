@@ -1,25 +1,36 @@
-import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Login from '../component/Login';
-import Register from '../component/Register';
+import React from 'react';
+import { BrowserRouter, Route,Switch } from 'react-router-dom';
 
-//class RouterComponent extends Component {
+//import "../node_modules/reactstrap/dist/reactstrap.min.js"
 
- function RouterComponent()  {
-  return (
-    <div>
+import MovieDetails from '../component/MovieDetails'
+import Signin from '../component/Signin';
+import Signup from '../component/Signup';
+import TheaterDetails from '../component/TheaterDetails'
+import Home from '../component/Home';
+import Book from '../component/Book';
+//import carousel from './component/carosel.js'
+//import Header from './component/Header';
+import MovieCard from '../component/MovieCard';
+const RouterComponent=()=> {
+
+return(
+  <div> 
     <BrowserRouter>
       <Switch>
-        <Route path='/register' component={Register}></Route>
-        <Route path='/' component={Login}></Route>
+        
+        <Route path='/movie' component={MovieDetails}></Route>
+        <Route path='/signup' component={Signup}></Route>
+        <Route path='/theater' component={TheaterDetails}></Route>
+        <Route path='/signin' component={Signin}></Route>
+        <Route path='/home' component={Home}></Route>
+        <Route path='/book' component={Book}></Route>
+        <Route path='/card' component={MovieCard}></Route>
       </Switch>
     </BrowserRouter>
-    </div>
-  );
+  
+  </div>);
 
-}
-    
+} 
 
-
-
-export default RouterComponent
+export default RouterComponent;
