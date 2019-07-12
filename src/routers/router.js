@@ -23,7 +23,7 @@ return(
         <Route path='/signup' component={Signup}></Route>
         <Route path='/theater' component={TheaterDetails}></Route>
         <Route path='/signin' component={Signin}></Route>
-        <Route path='/home' component={Home}></Route>
+        <Route path='/' component={Home}></Route>
         <Route path='/book' component={Book}></Route>
         <Route path='/card' component={MovieCard}></Route>
       </Switch>
